@@ -26,6 +26,7 @@ public class UnloadToDB {
         String queryDB = "select * " +
                 "from test_table " +
                 "where name like " + "'" + fod + "%'";
+        System.out.println(queryDB);
         return readDB(queryDB);
     }
 
@@ -34,7 +35,7 @@ public class UnloadToDB {
         try {
             resultSet = connection.prepareStatement(SQL).executeQuery();
             resultSet.next();
-            return new ImmutablePair<Integer, Date>(resultSet.getInt("executor"), resultSet.getDate("date"));
+            return new ImmutablePair<>(resultSet.getInt("executor"), resultSet.getDate("date"));
         } catch (SQLException e) {
             e.printStackTrace();
         }
