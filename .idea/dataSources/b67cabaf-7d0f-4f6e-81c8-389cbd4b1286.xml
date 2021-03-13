@@ -784,16 +784,17 @@ false YEKT
 false Z
 false Zulu
 </TimeZones>
-      <StartupTime>1615631427</StartupTime>
+      <StartupTime>1615666722</StartupTime>
     </root>
     <database id="2" parent="1" name="postgres">
       <ObjectId>13442</ObjectId>
       <Comment>default administrative connection database</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1142</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1161</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|32768|32770|1
 sequence|table|40963|40965|1
+sequence|table|49152|49154|1
 sequence|table|32782|32784|1
 </Relations>
     </database>
@@ -865,7 +866,7 @@ UC/10
 </Acl>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1143</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1162</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="17" parent="2" name="adminpack">
@@ -973,133 +974,144 @@ UC/10
       <HandlerId>335</HandlerId>
       <Type>index</Type>
     </access-method>
-    <sequence id="30" parent="16" name="test_table_id_seq">
+    <sequence id="30" parent="16" name="table_name_id_seq">
+      <ObjectId>49152</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1147</StateNumber>
+      <DataType>integer|0s</DataType>
+    </sequence>
+    <sequence id="31" parent="16" name="test_table_id_seq">
       <ObjectId>32768</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>1079</StateNumber>
       <DataType>integer|0s</DataType>
     </sequence>
-    <sequence id="31" parent="16" name="Аниме _id_seq">
+    <sequence id="32" parent="16" name="Аниме _id_seq">
       <ObjectId>32782</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>1109</StateNumber>
       <DataType>integer|0s</DataType>
     </sequence>
-    <sequence id="32" parent="16" name="Сводный журнал_id_seq">
+    <sequence id="33" parent="16" name="Сводный журнал_id_seq">
       <ObjectId>40963</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>1136</StateNumber>
       <DataType>integer|0s</DataType>
     </sequence>
-    <table id="33" parent="16" name="archive_fonds_public_">
+    <table id="34" parent="16" name="archive_fonds_public_">
       <ObjectId>24642</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>1020</StateNumber>
     </table>
-    <table id="34" parent="16" name="archive_fonds_public__1">
+    <table id="35" parent="16" name="archive_fonds_public__1">
       <ObjectId>24612</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>696</StateNumber>
     </table>
-    <table id="35" parent="16" name="archive_fonds_public__4">
+    <table id="36" parent="16" name="archive_fonds_public__4">
       <ObjectId>24594</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>521</StateNumber>
     </table>
-    <table id="36" parent="16" name="test_table">
+    <table id="37" parent="16" name="test_table">
       <ObjectId>32770</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>1086</StateNumber>
     </table>
-    <table id="37" parent="16" name="Аниме ">
+    <table id="38" parent="16" name="Аниме ">
       <ObjectId>32784</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>1109</StateNumber>
     </table>
-    <table id="38" parent="16" name="Сводный журнал">
+    <table id="39" parent="16" name="Сводный журнал">
       <ObjectId>40965</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>1136</StateNumber>
+      <StateNumber>1144</StateNumber>
     </table>
-    <column id="39" parent="33" name="c1">
+    <table id="40" parent="16" name="Сводный журнал ошибок">
+      <ObjectId>49154</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1152</StateNumber>
+    </table>
+    <column id="41" parent="34" name="c1">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>1020</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="40" parent="33" name="c2">
+    <column id="42" parent="34" name="c2">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <StateNumber>1020</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="41" parent="33" name="c3">
+    <column id="43" parent="34" name="c3">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <StateNumber>1020</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="42" parent="34" name="c1">
+    <column id="44" parent="35" name="c1">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>696</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="43" parent="34" name="c2">
+    <column id="45" parent="35" name="c2">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <StateNumber>696</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="44" parent="34" name="c3">
+    <column id="46" parent="35" name="c3">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <StateNumber>696</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="45" parent="34" name="c4">
+    <column id="47" parent="35" name="c4">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>696</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="46" parent="34" name="c5">
+    <column id="48" parent="35" name="c5">
       <Position>5</Position>
       <DataType>text|0s</DataType>
       <StateNumber>696</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="47" parent="35" name="id">
+    <column id="49" parent="36" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>1060</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="48" parent="35" name="name">
+    <column id="50" parent="36" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <StateNumber>1065</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="49" parent="35" name="path">
+    <column id="51" parent="36" name="path">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <StateNumber>1068</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="50" parent="35" name="author">
+    <column id="52" parent="36" name="author">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>1071</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="51" parent="35" name="date">
+    <column id="53" parent="36" name="date">
       <Position>5</Position>
       <DataType>text|0s</DataType>
       <StateNumber>1074</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="52" parent="36" name="id">
+    <column id="54" parent="37" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -1107,35 +1119,35 @@ UC/10
       <DefaultExpression>nextval(&apos;test_table_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="53" parent="36" name="name">
+    <column id="55" parent="37" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1079</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="54" parent="36" name="path_to_file">
+    <column id="56" parent="37" name="path_to_file">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1079</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="55" parent="36" name="executor">
+    <column id="57" parent="37" name="executor">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1079</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="56" parent="36" name="date">
+    <column id="58" parent="37" name="date">
       <Position>5</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1079</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <index id="57" parent="36" name="test_table_id_uindex">
+    <index id="59" parent="37" name="test_table_id_uindex">
       <ObjectId>32777</ObjectId>
       <StateNumber>1080</StateNumber>
       <ColNames>id</ColNames>
@@ -1144,7 +1156,7 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="58" parent="36" name="test_table_pk">
+    <index id="60" parent="37" name="test_table_pk">
       <ObjectId>32780</ObjectId>
       <StateNumber>1083</StateNumber>
       <ColNames>id</ColNames>
@@ -1154,7 +1166,7 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="59" parent="36" name="test_table_name_uindex">
+    <index id="61" parent="37" name="test_table_name_uindex">
       <ObjectId>32778</ObjectId>
       <StateNumber>1081</StateNumber>
       <ColNames>name</ColNames>
@@ -1164,7 +1176,7 @@ UC/10
       <CollationNames>default</CollationNames>
       <ClassIds>3126</ClassIds>
     </index>
-    <index id="60" parent="36" name="test_table_path_to_file_uindex">
+    <index id="62" parent="37" name="test_table_path_to_file_uindex">
       <ObjectId>32779</ObjectId>
       <StateNumber>1082</StateNumber>
       <ColNames>path_to_file</ColNames>
@@ -1174,14 +1186,14 @@ UC/10
       <CollationNames>default</CollationNames>
       <ClassIds>3126</ClassIds>
     </index>
-    <key id="61" parent="36" name="test_table_pk">
+    <key id="63" parent="37" name="test_table_pk">
       <ObjectId>32781</ObjectId>
       <StateNumber>1083</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>test_table_pk</UnderlyingIndexName>
     </key>
-    <column id="62" parent="37" name="id">
+    <column id="64" parent="38" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -1189,49 +1201,49 @@ UC/10
       <DefaultExpression>nextval(&apos;&quot;Аниме _id_seq&quot;&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="63" parent="37" name="name">
+    <column id="65" parent="38" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1109</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="64" parent="37" name="path_to_file">
+    <column id="66" parent="38" name="path_to_file">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1109</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="65" parent="37" name="size">
+    <column id="67" parent="38" name="size">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1109</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="66" parent="37" name="file_count">
+    <column id="68" parent="38" name="file_count">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1109</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="67" parent="37" name="executor">
+    <column id="69" parent="38" name="executor">
       <Position>6</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1109</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="68" parent="37" name="date">
+    <column id="70" parent="38" name="date">
       <Position>7</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1109</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <index id="69" parent="37" name="аниме _id_uindex">
+    <index id="71" parent="38" name="аниме _id_uindex">
       <ObjectId>32791</ObjectId>
       <StateNumber>1110</StateNumber>
       <ColNames>id</ColNames>
@@ -1240,7 +1252,7 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="70" parent="37" name="аниме _pk">
+    <index id="72" parent="38" name="аниме _pk">
       <ObjectId>32794</ObjectId>
       <StateNumber>1113</StateNumber>
       <ColNames>id</ColNames>
@@ -1250,7 +1262,7 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="71" parent="37" name="аниме _name_uindex">
+    <index id="73" parent="38" name="аниме _name_uindex">
       <ObjectId>32792</ObjectId>
       <StateNumber>1111</StateNumber>
       <ColNames>name</ColNames>
@@ -1260,7 +1272,7 @@ UC/10
       <CollationNames>default</CollationNames>
       <ClassIds>3126</ClassIds>
     </index>
-    <index id="72" parent="37" name="аниме _path_to_file_uindex">
+    <index id="74" parent="38" name="аниме _path_to_file_uindex">
       <ObjectId>32793</ObjectId>
       <StateNumber>1112</StateNumber>
       <ColNames>path_to_file</ColNames>
@@ -1270,14 +1282,14 @@ UC/10
       <CollationNames>default</CollationNames>
       <ClassIds>3126</ClassIds>
     </index>
-    <key id="73" parent="37" name="аниме _pk">
+    <key id="75" parent="38" name="аниме _pk">
       <ObjectId>32795</ObjectId>
       <StateNumber>1113</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>аниме _pk</UnderlyingIndexName>
     </key>
-    <column id="74" parent="38" name="id">
+    <column id="76" parent="39" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -1285,35 +1297,41 @@ UC/10
       <DefaultExpression>nextval(&apos;&quot;Сводный журнал_id_seq&quot;&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="75" parent="38" name="file_name">
+    <column id="77" parent="39" name="file_name">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1136</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="76" parent="38" name="executor">
+    <column id="78" parent="39" name="executor">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1136</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="77" parent="38" name="file_count">
+    <column id="79" parent="39" name="file_count">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1136</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="78" parent="38" name="file_size">
+    <column id="80" parent="39" name="file_size">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1136</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="79" parent="38" name="сводный журнал_id_uindex">
+    <column id="81" parent="39" name="date">
+      <Position>6</Position>
+      <DataType>date|0s</DataType>
+      <StateNumber>1144</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <index id="82" parent="39" name="сводный журнал_id_uindex">
       <ObjectId>40970</ObjectId>
       <StateNumber>1138</StateNumber>
       <ColNames>id</ColNames>
@@ -1322,7 +1340,7 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="80" parent="38" name="сводный журнал_pk">
+    <index id="83" parent="39" name="сводный журнал_pk">
       <ObjectId>40971</ObjectId>
       <StateNumber>1139</StateNumber>
       <ColNames>id</ColNames>
@@ -1332,7 +1350,7 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="81" parent="38" name="сводный журнал_file_name_uindex">
+    <index id="84" parent="39" name="сводный журнал_file_name_uindex">
       <ObjectId>40969</ObjectId>
       <StateNumber>1137</StateNumber>
       <ColNames>file_name</ColNames>
@@ -1341,12 +1359,77 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <key id="82" parent="38" name="сводный журнал_pk">
+    <key id="85" parent="39" name="сводный журнал_pk">
       <ObjectId>40972</ObjectId>
       <StateNumber>1139</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>сводный журнал_pk</UnderlyingIndexName>
+    </key>
+    <column id="86" parent="40" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1147</StateNumber>
+      <DefaultExpression>nextval(&apos;table_name_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="87" parent="40" name="file_name">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1147</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="88" parent="40" name="executor">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1147</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="89" parent="40" name="file_count">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1147</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="90" parent="40" name="file_size">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1147</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="91" parent="40" name="date">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1147</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="92" parent="40" name="table_name_id_uindex">
+      <ObjectId>49158</ObjectId>
+      <StateNumber>1148</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <index id="93" parent="40" name="table_name_pk">
+      <ObjectId>49159</ObjectId>
+      <StateNumber>1149</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <key id="94" parent="40" name="table_name_pk">
+      <ObjectId>49160</ObjectId>
+      <StateNumber>1149</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>table_name_pk</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>
