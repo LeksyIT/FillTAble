@@ -1,5 +1,7 @@
 import java.io.*;
 import java.nio.file.*;
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.sql.Date;
 
@@ -23,7 +25,8 @@ public class Filler {
 
     void processRootFolder() {
         try (Stream<Path> paths = Files.find(rootFolderPath, Integer.MAX_VALUE, (path, attributes) -> attributes.isDirectory())) {
-            paths.forEach(this::processFolder);
+            List<Path> pathList = paths.collect(Collectors.toList());
+            pathList.parallelStream().forEach(this::processFolder);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -39,6 +42,7 @@ public class Filler {
             Pair<Integer, Date> executorAndDate = dbExporter.queryDB(fondName);
             if (checker(fondName, file_size, executorAndDate)) {
                 dbImporter.appendToMainDB(fondName, executorAndDate.getLeft(), executorAndDate.getRight(), filesCount, file_size);
+                System.out.println(Thread.currentThread().getId());
                 System.out.println("Название файла = " + fondName);
                 System.out.println("Путь до файла = " + pathToFolder.toAbsolutePath());
                 System.out.println("Вес файлов = " + file_size);
@@ -63,7 +67,6 @@ public class Filler {
             return false;
         } else return !fondName.equals("") && !(file_size <= 0);
     }
-
     ;
 
     private Pair<Integer, Date> executorAndDateChecker(Pair<Integer, Date> executorAndDate) {
