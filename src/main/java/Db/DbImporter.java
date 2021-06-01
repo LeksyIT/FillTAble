@@ -21,7 +21,7 @@ public class DbImporter {
             prepareStatement.setDouble(4, size);
             prepareStatement.executeUpdate();
         } catch (java.sql.SQLException e) {
-            System.out.println("жизнь говно");
+            System.out.println("Ошибка добавления");
         }
     }
     public void appendToExDB(String file_name, Integer executor, Date date, Integer filesCount, Double size) {
@@ -35,7 +35,7 @@ public class DbImporter {
             prepareStatement.setDouble(4, size);
             prepareStatement.executeUpdate();
         } catch (java.sql.SQLException e) {
-            System.out.println("жизнь говно");
+            System.out.println("Ошибка добавления");
         }
     }
 }
